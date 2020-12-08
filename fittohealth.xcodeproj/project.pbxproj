@@ -1,0 +1,600 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DD212A9425801232000EA692 /* fittohealthApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD212A9325801232000EA692 /* fittohealthApp.swift */; };
+		DD212A9625801232000EA692 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD212A9525801232000EA692 /* ContentView.swift */; };
+		DD212A982580123B000EA692 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD212A972580123B000EA692 /* Assets.xcassets */; };
+		DD212A9B2580123B000EA692 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD212A9A2580123B000EA692 /* Preview Assets.xcassets */; };
+		DD212A9D2580123B000EA692 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD212A9C2580123B000EA692 /* Persistence.swift */; };
+		DD212AA02580123B000EA692 /* fittohealth.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD212A9E2580123B000EA692 /* fittohealth.xcdatamodeld */; };
+		DD212AAB2580123B000EA692 /* fittohealthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD212AAA2580123B000EA692 /* fittohealthTests.swift */; };
+		DD212AB62580123B000EA692 /* fittohealthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD212AB52580123B000EA692 /* fittohealthUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DD212AA72580123B000EA692 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD212A8825801232000EA692 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD212A8F25801232000EA692;
+			remoteInfo = fittohealth;
+		};
+		DD212AB22580123B000EA692 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD212A8825801232000EA692 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD212A8F25801232000EA692;
+			remoteInfo = fittohealth;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DD212A9025801232000EA692 /* fittohealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fittohealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD212A9325801232000EA692 /* fittohealthApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fittohealthApp.swift; sourceTree = "<group>"; };
+		DD212A9525801232000EA692 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DD212A972580123B000EA692 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD212A9A2580123B000EA692 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DD212A9C2580123B000EA692 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		DD212A9F2580123B000EA692 /* fittohealth.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = fittohealth.xcdatamodel; sourceTree = "<group>"; };
+		DD212AA12580123B000EA692 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD212AA62580123B000EA692 /* fittohealthTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fittohealthTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD212AAA2580123B000EA692 /* fittohealthTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fittohealthTests.swift; sourceTree = "<group>"; };
+		DD212AAC2580123B000EA692 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD212AB12580123B000EA692 /* fittohealthUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fittohealthUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD212AB52580123B000EA692 /* fittohealthUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fittohealthUITests.swift; sourceTree = "<group>"; };
+		DD212AB72580123B000EA692 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD212A8D25801232000EA692 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD212AA32580123B000EA692 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD212AAE2580123B000EA692 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DD212A8725801232000EA692 = {
+			isa = PBXGroup;
+			children = (
+				DD212A9225801232000EA692 /* fittohealth */,
+				DD212AA92580123B000EA692 /* fittohealthTests */,
+				DD212AB42580123B000EA692 /* fittohealthUITests */,
+				DD212A9125801232000EA692 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DD212A9125801232000EA692 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD212A9025801232000EA692 /* fittohealth.app */,
+				DD212AA62580123B000EA692 /* fittohealthTests.xctest */,
+				DD212AB12580123B000EA692 /* fittohealthUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD212A9225801232000EA692 /* fittohealth */ = {
+			isa = PBXGroup;
+			children = (
+				DD212A9325801232000EA692 /* fittohealthApp.swift */,
+				DD212A9525801232000EA692 /* ContentView.swift */,
+				DD212A972580123B000EA692 /* Assets.xcassets */,
+				DD212A9C2580123B000EA692 /* Persistence.swift */,
+				DD212AA12580123B000EA692 /* Info.plist */,
+				DD212A9E2580123B000EA692 /* fittohealth.xcdatamodeld */,
+				DD212A992580123B000EA692 /* Preview Content */,
+			);
+			path = fittohealth;
+			sourceTree = "<group>";
+		};
+		DD212A992580123B000EA692 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DD212A9A2580123B000EA692 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DD212AA92580123B000EA692 /* fittohealthTests */ = {
+			isa = PBXGroup;
+			children = (
+				DD212AAA2580123B000EA692 /* fittohealthTests.swift */,
+				DD212AAC2580123B000EA692 /* Info.plist */,
+			);
+			path = fittohealthTests;
+			sourceTree = "<group>";
+		};
+		DD212AB42580123B000EA692 /* fittohealthUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DD212AB52580123B000EA692 /* fittohealthUITests.swift */,
+				DD212AB72580123B000EA692 /* Info.plist */,
+			);
+			path = fittohealthUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD212A8F25801232000EA692 /* fittohealth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD212ABA2580123B000EA692 /* Build configuration list for PBXNativeTarget "fittohealth" */;
+			buildPhases = (
+				DD212A8C25801232000EA692 /* Sources */,
+				DD212A8D25801232000EA692 /* Frameworks */,
+				DD212A8E25801232000EA692 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fittohealth;
+			productName = fittohealth;
+			productReference = DD212A9025801232000EA692 /* fittohealth.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DD212AA52580123B000EA692 /* fittohealthTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD212ABD2580123B000EA692 /* Build configuration list for PBXNativeTarget "fittohealthTests" */;
+			buildPhases = (
+				DD212AA22580123B000EA692 /* Sources */,
+				DD212AA32580123B000EA692 /* Frameworks */,
+				DD212AA42580123B000EA692 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD212AA82580123B000EA692 /* PBXTargetDependency */,
+			);
+			name = fittohealthTests;
+			productName = fittohealthTests;
+			productReference = DD212AA62580123B000EA692 /* fittohealthTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DD212AB02580123B000EA692 /* fittohealthUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD212AC02580123B000EA692 /* Build configuration list for PBXNativeTarget "fittohealthUITests" */;
+			buildPhases = (
+				DD212AAD2580123B000EA692 /* Sources */,
+				DD212AAE2580123B000EA692 /* Frameworks */,
+				DD212AAF2580123B000EA692 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD212AB32580123B000EA692 /* PBXTargetDependency */,
+			);
+			name = fittohealthUITests;
+			productName = fittohealthUITests;
+			productReference = DD212AB12580123B000EA692 /* fittohealthUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD212A8825801232000EA692 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					DD212A8F25801232000EA692 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					DD212AA52580123B000EA692 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = DD212A8F25801232000EA692;
+					};
+					DD212AB02580123B000EA692 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = DD212A8F25801232000EA692;
+					};
+				};
+			};
+			buildConfigurationList = DD212A8B25801232000EA692 /* Build configuration list for PBXProject "fittohealth" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DD212A8725801232000EA692;
+			productRefGroup = DD212A9125801232000EA692 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD212A8F25801232000EA692 /* fittohealth */,
+				DD212AA52580123B000EA692 /* fittohealthTests */,
+				DD212AB02580123B000EA692 /* fittohealthUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD212A8E25801232000EA692 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD212A9B2580123B000EA692 /* Preview Assets.xcassets in Resources */,
+				DD212A982580123B000EA692 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD212AA42580123B000EA692 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD212AAF2580123B000EA692 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD212A8C25801232000EA692 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD212AA02580123B000EA692 /* fittohealth.xcdatamodeld in Sources */,
+				DD212A9D2580123B000EA692 /* Persistence.swift in Sources */,
+				DD212A9625801232000EA692 /* ContentView.swift in Sources */,
+				DD212A9425801232000EA692 /* fittohealthApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD212AA22580123B000EA692 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD212AAB2580123B000EA692 /* fittohealthTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD212AAD2580123B000EA692 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD212AB62580123B000EA692 /* fittohealthUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DD212AA82580123B000EA692 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD212A8F25801232000EA692 /* fittohealth */;
+			targetProxy = DD212AA72580123B000EA692 /* PBXContainerItemProxy */;
+		};
+		DD212AB32580123B000EA692 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD212A8F25801232000EA692 /* fittohealth */;
+			targetProxy = DD212AB22580123B000EA692 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DD212AB82580123B000EA692 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DD212AB92580123B000EA692 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD212ABB2580123B000EA692 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"fittohealth/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = fittohealth/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.specialcircumstances.fittohealth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DD212ABC2580123B000EA692 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"fittohealth/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = fittohealth/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.specialcircumstances.fittohealth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DD212ABE2580123B000EA692 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = fittohealthTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.specialcircumstances.fittohealthTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fittohealth.app/fittohealth";
+			};
+			name = Debug;
+		};
+		DD212ABF2580123B000EA692 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = fittohealthTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.specialcircumstances.fittohealthTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fittohealth.app/fittohealth";
+			};
+			name = Release;
+		};
+		DD212AC12580123B000EA692 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = fittohealthUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.specialcircumstances.fittohealthUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = fittohealth;
+			};
+			name = Debug;
+		};
+		DD212AC22580123B000EA692 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = fittohealthUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.specialcircumstances.fittohealthUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = fittohealth;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD212A8B25801232000EA692 /* Build configuration list for PBXProject "fittohealth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD212AB82580123B000EA692 /* Debug */,
+				DD212AB92580123B000EA692 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD212ABA2580123B000EA692 /* Build configuration list for PBXNativeTarget "fittohealth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD212ABB2580123B000EA692 /* Debug */,
+				DD212ABC2580123B000EA692 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD212ABD2580123B000EA692 /* Build configuration list for PBXNativeTarget "fittohealthTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD212ABE2580123B000EA692 /* Debug */,
+				DD212ABF2580123B000EA692 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD212AC02580123B000EA692 /* Build configuration list for PBXNativeTarget "fittohealthUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD212AC12580123B000EA692 /* Debug */,
+				DD212AC22580123B000EA692 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DD212A9E2580123B000EA692 /* fittohealth.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DD212A9F2580123B000EA692 /* fittohealth.xcdatamodel */,
+			);
+			currentVersion = DD212A9F2580123B000EA692 /* fittohealth.xcdatamodel */;
+			path = fittohealth.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DD212A8825801232000EA692 /* Project object */;
+}
