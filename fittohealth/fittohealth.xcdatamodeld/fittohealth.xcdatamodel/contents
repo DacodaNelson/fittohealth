@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17511" systemVersion="19H15" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="AHealth" representedClassName="AHealth" syncable="YES" codeGenerationType="class">
+        <attribute name="calories" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="caloriesrel" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GFit" inverseName="caloriesrel" inverseEntity="GFit"/>
+    </entity>
+    <entity name="GFit" representedClassName="GFit" syncable="YES" codeGenerationType="class">
+        <attribute name="calories" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="caloriesrel" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AHealth" inverseName="caloriesrel" inverseEntity="AHealth"/>
+    </entity>
     <entity name="Item" representedClassName="Item" syncable="YES" codeGenerationType="class">
         <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
     </entity>
     <elements>
         <element name="Item" positionX="-63" positionY="-18" width="128" height="44"/>
+        <element name="GFit" positionX="-36" positionY="9" width="128" height="88"/>
+        <element name="AHealth" positionX="-9" positionY="36" width="128" height="88"/>
     </elements>
 </model>
