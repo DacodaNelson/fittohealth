@@ -51,6 +51,7 @@
 		DD212AB72580123B000EA692 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD212AC6258012D6000EA692 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DD212ACA258018AB000EA692 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		DD212ACB25801D67000EA692 /* COPYING */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +82,7 @@
 		DD212A8725801232000EA692 = {
 			isa = PBXGroup;
 			children = (
+				DD212ACB25801D67000EA692 /* COPYING */,
 				DD212ACA258018AB000EA692 /* .gitignore */,
 				DD212AC6258012D6000EA692 /* README.md */,
 				DD212A9225801232000EA692 /* fittohealth */,

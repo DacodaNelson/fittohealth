@@ -1,4 +1,5 @@
 #  fitttohealth
+
 ## An app to do a thing that shouldn't be so hard
 
 Were you an Android user and you switched to iOS? Did you maybe for some length of time use an Android device and Google Fit to keep track of health data? Perhaps you even owned one of those Google Wear (Neé Android Wear) watches to get even more accurate fitness tracking and heart rate information and stuff?
