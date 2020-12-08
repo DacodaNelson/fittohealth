@@ -49,6 +49,8 @@
 		DD212AB12580123B000EA692 /* fittohealthUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fittohealthUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD212AB52580123B000EA692 /* fittohealthUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fittohealthUITests.swift; sourceTree = "<group>"; };
 		DD212AB72580123B000EA692 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD212AC6258012D6000EA692 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DD212ACA258018AB000EA692 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,8 @@
 		DD212A8725801232000EA692 = {
 			isa = PBXGroup;
 			children = (
+				DD212ACA258018AB000EA692 /* .gitignore */,
+				DD212AC6258012D6000EA692 /* README.md */,
 				DD212A9225801232000EA692 /* fittohealth */,
 				DD212AA92580123B000EA692 /* fittohealthTests */,
 				DD212AB42580123B000EA692 /* fittohealthUITests */,
