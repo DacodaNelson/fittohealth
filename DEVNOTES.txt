@@ -1,0 +1,167 @@
+/*
+********************************************************************************
+ 
+ DEVNOTES.txt - Notes, about development; go figure.
+ Created by Dacoda Bizmark Nelson on 12/8/20.
+ 
+ Copyright (C) 2020  Dacoda Bizmark Nelson and Special Circumstances
+ 
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+ 
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ 
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ 
+ Contact information: Please contact me through GitHub, or via email at
+ dacodanelson, using google's email service.
+ 
+ ********************************************************************************
+ */
+ 
+ Hi! If you opened this file, you're probably in the wrong place. This isn't a
+ README or help file or anything, it's just the junk the person who wrote this
+ steaming pile of trash wanted to remember. It's a reference guide and pretty
+ messy so you'd be better off looking at other things. Try images of cats,
+ those things are pretty darned cute.
+ 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ 
+ GENERAL STATEMENTS AND JUNK -
+ 
+ Alright, here's how this is going to work. Well, hopefully, at any rate, but
+ that's as may be. This is the general outline though.
+ 
+    * Walk the user through initiating a Google data export, selecting only
+        Google Fit data, downloading the export, and unzipping it, as well
+        as having them note where the folder which results (labeled "Takeout")
+        is stored on their device.
+    * Request the user select the Takeout folder from a file chooser.
+    * Parse the Google Fit data which is located in the Takeout folder.
+    * Store this data in Core Data.
+    * Convert the Google Fit information to the appropriate format required
+        by Apple Health's database automatically, in the background, and
+        store it in Core Data.
+    * Request user access permission (read and write for the appropriate data
+        types) for Apple Health.
+    * Read out the Apple Health database for the relevant metrics and store
+        those values in Core Data.
+    * Compare timestamps and values between the Fit data converted into Apple
+        Health data and the preexisting Apple Health data to see if the
+        measurements have already been stored.
+        * If yes, notify the user.
+        * If no, proceed.
+    * Compare timestamps and values between Google Fit data and (preexisting)
+        Apple Health data.
+        * Notify the user if there are any conflicts.
+        * Provide facilities to either cancel the process or select conflict
+            resolution strategy (overwrite, keep existing, keep both).
+    * Allow the user to review, a graphical representation of the timeline of
+        values which will be stored to Apple Health.
+        * Create a modified version of the imported Fit > Apple Health data in
+            Core Data and store it so it is persistent on disk -- this will be
+            helpful in future if the import is flawed as it will be a list of
+            all the entries to remove from Apple Health.
+    * Push the selected entries to the user's Apple Health database.
+    * Congratulate the user on a job well done.
+
+Clearly, this is going to need some revisions as we go along, and there will be
+a whole other headache to deal with in terms of *removing* user data that was
+imported erroneously, but considering that's just going backwards, it shouldn't
+be too hard. Additionally, I think I remember that when deleting an App that has
+data stored in Apple Health, it alerts the user and asks them if they want to
+delete that too. Since the entries will be associated with fittohealth, this
+would take care of the problem all on its own. We shall see.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+DEVELOPMENT ROADMAP (TENTATIVE) -
+
+    * Figure out how to interact with Core Data
+    * Implement the file-picker dialogue
+    * Figure out which sorts of entries are compatible between Fit and Apple
+        Health.
+    * Develop a method to convert the Fit data to Apple Health format
+    * Figure out how to request access (read/write) to the types of entries
+        that we'll be needing to modify in Apple Health.
+
+    ... More to come
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+NOTES ABOUT DATA-TYPES AND COMPATIBILITY -
+
+
+(This is not an exhaustive list, but only the major ones that I will be looking
+to implement initially, or piece-meal as things progress.)
+
+Google Fit Entry Type                  |    Apple Health Entry Type
+---------------------------------------|---------------------------------------
+Heart-rate (float, bpm)                |
+    Instantaneous heart-rate readings, |
+    timestamp is based on the last of  |
+    the measurements.                  |
+---------------------------------------|---------------------------------------
+Weight (float, kg)                     |
+---------------------------------------|---------------------------------------
+Distance (float, m)                    |
+    Distance traveled since last       |
+    reading.                           |
+---------------------------------------|---------------------------------------
+Location Sample (float, degrees)       |
+    There is one entry for longitude,  |
+    one for latitude, one for altitude,|
+    and one for accuracy for each      |
+    entry. [accuracy is measured aa    |
+    (float, m)]                        |
+---------------------------------------|---------------------------------------
+BMR (float, kcal per day)              |
+---------------------------------------|---------------------------------------
+Calories burned (float, kcal)          |
+---------------------------------------|---------------------------------------
+Step Count Delta (int, count)          |
+    The number of steps taken SINCE    |
+    THE LAST READING.                  |
+---------------------------------------|---------------------------------------
+
+(Will fill out the right side once I can do anything with the exported data in
+the form of the left side.)
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+NOTES ON STRUCTURE OF THE GOOGLE FIT EXPORT FOLDER/FILES -
+
+
+The folder strucutre is:
+
+/Takeout -> archive_browser.html
+            /Fit/...
+                /Activities/...
+                    [lots of files]
+                /Daily Aggregations/...
+                    YYYY-MM-DD.csv
+                    ...
+
+The csv files look to be the most useful. There's one for each day that data
+was recorded, and everything is aggregated in 15-minute intervals.
+
+This poses a slight problem inasmuch as we'll be losing a lot of the granularity
+but since people don't need to know down to the second how many steps they've
+taken, it will suit our purposes fine.
+
+The structure of the files themselves are straightforward. The first line is
+a list of the column entry types, and then each row contains the data in a
+standard format.
+
+The only hangup here is that we're going to have to process each file
+"intelligently", because columns with no data for the day are omitted. Thus,
+we can't just say the fourth column is the calories burned or whatever, which
+is kind of a bummer.
+
+

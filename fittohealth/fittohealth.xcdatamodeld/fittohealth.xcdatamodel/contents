@@ -5,6 +5,7 @@
         <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <relationship name="caloriesrel" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GFit" inverseName="caloriesrel" inverseEntity="GFit"/>
     </entity>
+    <entity name="Calories" representedClassName="Calories" syncable="YES" codeGenerationType="class"/>
     <entity name="GFit" representedClassName="GFit" syncable="YES" codeGenerationType="class">
         <attribute name="calories" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
@@ -13,9 +14,14 @@
     <entity name="Item" representedClassName="Item" syncable="YES" codeGenerationType="class">
         <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
     </entity>
+    <entity name="Steps" representedClassName="Steps" syncable="YES" codeGenerationType="class"/>
+    <entity name="Weight" representedClassName="Weight" syncable="YES" codeGenerationType="class"/>
     <elements>
-        <element name="Item" positionX="-63" positionY="-18" width="128" height="44"/>
-        <element name="GFit" positionX="-36" positionY="9" width="128" height="88"/>
-        <element name="AHealth" positionX="-9" positionY="36" width="128" height="88"/>
+        <element name="Item" positionX="-436.23046875" positionY="3.83984375" width="128" height="44"/>
+        <element name="GFit" positionX="50.6328125" positionY="-156.78515625" width="128" height="88"/>
+        <element name="AHealth" positionX="-204.984375" positionY="-157.45703125" width="128" height="88"/>
+        <element name="Calories" positionX="-95.8671875" positionY="-8.9453125" width="128" height="43"/>
+        <element name="Steps" positionX="-292.92578125" positionY="-0.6796875" width="128" height="43"/>
+        <element name="Weight" positionX="71.12109375" positionY="-8.625" width="128" height="43"/>
     </elements>
 </model>
